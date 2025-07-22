@@ -1,0 +1,1 @@
+2025-07-22 01:41:19,189 - root - ERROR - Error occurred during data ingestion: type object 'TrainingPipelineConfig' has no attribute 'artifact_dir'

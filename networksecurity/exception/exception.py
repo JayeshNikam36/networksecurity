@@ -1,21 +1,23 @@
 import sys
+import traceback
 from networksecurity.logging import logger
 
 class NetworkSecurityException(Exception):
-    """Base class for exceptions in the Network Security module."""
+    """Custom Exception class for Network Security errors."""
 
-    def __init__(self, message):
-        self.error_message = message
-        _, _, exc_tb = sys.exc_info()
+    def __init__(self, error: Exception, error_detail: sys):
+        super().__init__(str(error))  # Initializes base Exception with error message
+        self.error_message = self._get_detailed_error_message(error, error_detail)
+
+    def _get_detailed_error_message(self, error: Exception, error_detail: sys) -> str:
+        _, _, exc_tb = error_detail.exc_info()
 
         if exc_tb is not None:
-            self.lineno = exc_tb.tb_lineno
-            self.file_name = exc_tb.tb_frame.f_code.co_filename
+            line_number = exc_tb.tb_lineno
+            file_name = exc_tb.tb_frame.f_code.co_filename
+            return f"Error occurred in file {file_name} at line {line_number}: {str(error)}"
         else:
-            self.lineno = None
-            self.file_name = None
+            return f"Error: {str(error)} (location unknown)"
 
     def __str__(self):
-        location = f"in file {self.file_name} at line {self.lineno}" if self.file_name and self.lineno else "at an unknown location"
-        return f"Error occurred {location}: {self.error_message}"
-
+        return self.error_message
