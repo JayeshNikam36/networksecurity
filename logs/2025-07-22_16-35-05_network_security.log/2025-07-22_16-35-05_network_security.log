@@ -1,0 +1,12 @@
+2025-07-22 16:35:06,796 - root - INFO - Starting data ingestion process...
+2025-07-22 16:35:08,058 - root - INFO - Train set shape: (8844, 32), Test set shape: (2211, 32)
+2025-07-22 16:35:08,058 - root - INFO - Train file path: Artifacts\20250722163505\data_ingestion\ingested\train.csv
+2025-07-22 16:35:08,093 - root - INFO - Test file path: Artifacts\20250722163505\data_ingestion\ingested\test.csv
+2025-07-22 16:35:08,111 - root - INFO - Data ingestion completed successfully.
+2025-07-22 16:35:08,111 - root - INFO - Data ingestion completed successfully.
+2025-07-22 16:35:08,124 - root - INFO - Initialte the data validation
+2025-07-22 16:35:08,124 - root - INFO - Starting data validation process...
+2025-07-22 16:35:08,186 - root - INFO - Data validation completed successfully.
+2025-07-22 16:35:08,186 - root - INFO - Expected number of columns: 2, Actual number of columns: 32
+2025-07-22 16:35:08,186 - root - INFO - DAta frame has columns: 32
+2025-07-22 16:35:08,186 - root - ERROR - Error occurred during data ingestion: Error occurred in file D:\My folder 2025\python for data science\projects\NetworkSecurity\networksecurity\components\data_validatipn.py at line 75: NetworkSecurityException.__init__() missing 1 required positional argument: 'error_detail'
