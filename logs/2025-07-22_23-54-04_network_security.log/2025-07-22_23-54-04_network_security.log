@@ -1,0 +1,19 @@
+2025-07-22 23:54:05,534 - root - INFO - Starting data ingestion process...
+2025-07-22 23:54:06,821 - root - INFO - Train set shape: (8844, 31), Test set shape: (2211, 31)
+2025-07-22 23:54:06,821 - root - INFO - Train file path: Artifacts\20250722235404\data_ingestion\ingested\train.csv
+2025-07-22 23:54:06,846 - root - INFO - Test file path: Artifacts\20250722235404\data_ingestion\ingested\test.csv
+2025-07-22 23:54:06,856 - root - INFO - Data ingestion completed successfully.
+2025-07-22 23:54:06,858 - root - INFO - Data ingestion completed successfully.
+2025-07-22 23:54:06,858 - root - INFO - Initialte the data validation
+2025-07-22 23:54:06,858 - root - INFO - Starting data validation process...
+2025-07-22 23:54:06,933 - root - INFO - Data validation completed successfully.
+2025-07-22 23:54:06,933 - root - INFO - Expected number of columns: 31, Actual number of columns: 31
+2025-07-22 23:54:06,933 - root - INFO - Dataframe columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+2025-07-22 23:54:06,933 - root - INFO - Expected columns from schema: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+2025-07-22 23:54:06,933 - root - INFO - Expected number of columns: 31, Actual number of columns: 31
+2025-07-22 23:54:06,933 - root - INFO - Dataframe columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+2025-07-22 23:54:06,933 - root - INFO - Expected columns from schema: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+2025-07-22 23:54:06,986 - root - INFO - Drift report written to: Artifacts\20250722235404\data_validation\drift_report\report.yaml
+2025-07-22 23:54:07,028 - root - INFO - Data validation completed
+2025-07-22 23:54:07,028 - root - INFO - Initiate data transformation
+2025-07-22 23:54:07,028 - root - ERROR - Error occurred during data ingestion: Error occurred in file D:\My folder 2025\python for data science\projects\NetworkSecurity\networksecurity\components\data_transformation.py at line 20: 'DataIngetionConfig' object has no attribute 'training_pipeline_config'
